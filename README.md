@@ -1,23 +1,31 @@
 #UProxy
+
 ##A micro proxy pretending to be Sogo web spider to get Weibo posts.
 
 #Usage
+
 ##Installation
+
 ###1.Get a linux or windows server, install Python 2.7.
+
 ###2.Install facebook asynchronous lightweight web server tornado.
 > pip install tornado
 
 ##Start Proxy
+
 host: the website you want to crawl.
 port: in which port the proxy listens.
 > python proxy.py --port=8000 --host=https://weibo.com/ &
 
 ##Make Request
+
 ###1./route
+
 ###2.url=<some url you want to crawl>
 > http://10.134.100.140:8000/route?url=http://weibo.com/rshuai&is_hot=1
 
 ##Output
+
 The output looks like this:
 > [uproxy][00018538] INFO 2018-04-13 11:49:30,505 [Starting 4 processes]
 > [uproxy][00010906] ERROR 2018-04-13 11:50:27,568 [Sogou-Observer: requestid:00010914-1523591427.57, request_query: http://weibo.com/rshuai]
