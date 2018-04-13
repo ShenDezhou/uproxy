@@ -23,7 +23,7 @@ import log_class
 # import redis
 import string
 
-define("host", default="http://www.weibo.com", help="the host of the default route /")
+define("host", default="http://www.weibo.com/", help="the host of the default route /")
 define("port", default=8000, help="run on the given port", type=int)
 #tornado.httpclient.AsyncHTTPClient.configure("tornado.curl_httpclient.CurlAsyncHTTPClient")
 
